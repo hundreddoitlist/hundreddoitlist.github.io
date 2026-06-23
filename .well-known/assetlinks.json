@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.hundreddoitlist",
+    "sha256_cert_fingerprints": [
+      "55:DE:8C:F3:EB:EA:29:D1:6E:FD:B2:25:82:46:B0:AF:F7:4E:7A:49:79:3F:9C:27:A7:F9:55:9B:A4:8D:19:C6"
+    ]
+  }
+}]
