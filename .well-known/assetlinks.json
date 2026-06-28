@@ -1,10 +1,14 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.hundreddoitlist",
-    "sha256_cert_fingerprints": [
-      "55:DE:8C:F3:EB:EA:29:D1:6E:FD:B2:25:82:46:B0:AF:F7:4E:7A:49:79:3F:9C:27:A7:F9:55:9B:A4:8D:19:C6"
-    ]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hundreddoitlist",
+      "sha256_cert_fingerprints": [
+        "55:DE:8C:F3:EB:EA:29:D1:6E:FD:B2:25:82:46:B0:AF:F7:4E:7A:49:79:3F:9C:27:A7:F9:55:9B:A4:8D:19:C6",
+        "3F:D1:5E:9C:CD:16:FE:6D:27:B8:B4:C2:6B:AF:7E:45:D9:3B:A1:3C:B6:FC:51:35:7B:49:75:F3:1B:CA:CB:CB",
+        "FD:15:CB:2F:2C:27:0D:9F:7C:A6:30:FD:B1:3B:43:3E:1F:DC:A1:81:FD:A3:63:EB:20:19:6E:F3:65:19:E7:A6"
+      ]
+    }
   }
-}]
+]
