@@ -18,71 +18,72 @@
   <p class="updated">최종 수정일: 2026년 10월 4일 · 시행일: 2026년 6월 23일</p>
 
   <p>
-    100다헤 · 이 100가지 다 하기 전엔 헤어지지 못해(이하 "앱" 또는 "서비스")는 이용자의 개인정보를 소중히 여기며,
+    100다헤 · 이 100가지 다 하기 전엔 헤어지지 못해(이하 "서비스")는 이용자의 개인정보를 소중히 여기며,
     「개인정보 보호법」 및 관련 법령을 준수합니다.
-    본 방침은 앱이 수집하는 정보, 사용 목적, 보존 기간, 이용자 권리를 설명합니다.
+    본 방침은 서비스가 수집하는 정보, 사용 목적, 보존 기간, 이용자 권리를 설명합니다.
+    서비스는 2026년 10월부터 웹앱(<a href="https://hundreddoitlist.firebaseapp.com">hundreddoitlist.firebaseapp.com</a>)으로 제공되며,
+    이전 안드로이드 앱의 데이터도 같은 기준으로 처리합니다.
   </p>
 
   <h2>1. 수집하는 정보</h2>
   <ul>
-    <li><strong>Google 계정 정보</strong>: 로그인 시 Google Sign-In을 통해 이름, 프로필 사진 URL을 수집합니다. 이메일 주소는 Firebase Authentication이 보유하며 앱 내 화면에 노출되지 않습니다. 이용자가 직접 입력한 별명(선택)도 저장합니다.</li>
-    <li><strong>커플 연동 정보</strong>: 초대 코드 생성·입력 시 커플 식별자(coupleId), 연동 일시를 저장합니다. 커플 닉네임을 설정하면(선택) 함께 저장합니다.</li>
-    <li><strong>버킷리스트 데이터</strong>: 항목 제목, 카테고리, 메모, 완료 여부, 완료 일시, 난이도, 리마인더 날짜, 감정 태그, 이모지 반응을 저장합니다.</li>
-    <li><strong>오늘의 질문 답변</strong>: "오늘의 커플 질문"에 이용자가 작성한 답변을 저장하며, 커플 두 사람만 열람할 수 있습니다.</li>
-    <li><strong>고객 문의</strong>: 앱 내 문의하기를 이용하면 문의 본문과 함께, 문제 해결을 위해 앱 버전·OS 버전·기기 모델·언어 설정이 자동으로 첨부됩니다.</li>
-    <li><strong>인증 사진</strong>: 이용자가 직접 첨부한 사진이 Firebase Storage에 저장됩니다. 사진 접근에는 별도 권한이 필요하며 이용자 동의 없이 수집하지 않습니다.</li>
-    <li><strong>위치 정보</strong>: 완료 항목에 위치 태그를 추가할 경우에만 수집됩니다(선택 사항). 권한을 허용하지 않으면 수집되지 않습니다.</li>
-    <li><strong>기기 토큰(FCM)</strong>: 푸시 알림 발송을 위해 Firebase Cloud Messaging 토큰을 수집합니다. 토큰은 본인 기기에서만 읽을 수 있으며 파트너에게 노출되지 않습니다.</li>
-    <li><strong>앱 사용 로그</strong>: Firebase Analytics를 통해 화면 조회, 기능 사용 패턴 등 익명화된 통계 데이터를 수집합니다.</li>
-    <li><strong>오류 로그</strong>: Firebase Crashlytics를 통해 앱 충돌 정보를 수집합니다.</li>
-    <li><strong>인앱결제 정보</strong>: 현재 앱은 인앱결제를 제공하지 않아 구매 정보를 수집하지 않습니다. 인앱결제를 다시 제공하게 되면 구매 여부 및 구매 토큰이 Google Play를 통해 처리되며, 카드 번호 등 결제 수단은 앱이 직접 수집하지 않습니다. 재개 시 이 방침을 먼저 갱신합니다.</li>
-    <li><strong>AI 추천 요청 정보</strong>: "AI 추천"을 요청하면 중복 추천을 피하기 위해 커플의 기존 버킷리스트 항목 제목이 Google Gemini API로 전송됩니다. 이름·이메일 등 계정 정보는 함께 보내지 않습니다.</li>
+    <li><strong>Google 계정 정보</strong>: Google 로그인 시 이름, 프로필 사진 URL을 수집합니다. 이메일 주소는 Firebase Authentication이 보유하며 파트너에게 노출되지 않습니다. 이용자가 직접 입력한 별명(선택)도 저장합니다.</li>
+    <li><strong>커플 연동 정보</strong>: 초대 코드 생성·입력 시 커플 식별자, 연동 일시를 저장합니다. 커플 이름·소개·사귄 날을 설정하면(선택) 함께 저장합니다.</li>
+    <li><strong>버킷리스트 데이터</strong>: 항목 제목, 카테고리, 메모, 완료 여부, 완료 일시, 난이도, 리마인더 날짜, 이모지 반응, 데이트 일정을 저장합니다.</li>
+    <li><strong>오늘의 질문 답변</strong>: "오늘의 질문"에 작성한 답변을 저장하며, 커플 두 사람만 열람할 수 있습니다.</li>
+    <li><strong>고객 문의</strong>: 문의하기를 이용하면 문의 본문과 함께, 문제 해결을 위해 서비스 버전·브라우저 정보(User-Agent)·플랫폼·언어 설정이 자동으로 첨부됩니다. 첨부되는 내용은 작성 화면에서 확인할 수 있습니다.</li>
+    <li><strong>인증 사진</strong>: 이용자가 직접 고른 사진만 저장합니다. 업로드 전에 브라우저에서 크기를 줄이며(긴 변 1600px), 커플 두 사람만 볼 수 있습니다.</li>
+    <li><strong>알림 토큰(FCM)</strong>: 이용자가 알림을 켠 경우에만 푸시 알림용 Firebase Cloud Messaging 토큰을 저장합니다. 본인만 읽을 수 있으며 파트너에게 노출되지 않습니다.</li>
+    <li><strong>보안 확인 정보</strong>: 자동화된 악용을 막기 위해 Google reCAPTCHA Enterprise(Firebase App Check)가 기기·브라우저 정보를 확인합니다.</li>
+    <li><strong>브라우저 저장소</strong>: 로그인 상태 유지(Firebase Authentication), 초대 링크로 들어온 경우의 초대 코드(세션 동안만), 안내 배너 닫힘 여부를 이용자의 브라우저에 저장합니다. 광고·추적 목적의 쿠키는 사용하지 않습니다.</li>
+    <li><strong>AI 추천 요청 정보</strong>: AI 추천 기능을 제공하는 경우, 중복 추천을 피하기 위해 커플의 기존 항목 제목이 Google Gemini API로 전송됩니다. 이름·이메일 등 계정 정보는 함께 보내지 않습니다.</li>
   </ul>
+  <p>서비스는 이용자의 위치 정보를 수집하지 않습니다. "오늘의 뽑기"의 날씨는 서울 기준으로만 조회합니다.</p>
 
   <h2>2. 정보 이용 목적</h2>
   <ul>
     <li>서비스 제공 및 커플 데이터 실시간 동기화</li>
-    <li>푸시 알림 발송 (파트너 활동, 리마인더, 기념일, 마일스톤)</li>
-    <li>AI 기반 버킷리스트 항목 추천</li>
-    <li>구매 상태 검증 및 프리미엄 기능 제공 (인앱결제 재개 시)</li>
-    <li>서비스 품질 개선을 위한 통계 분석 및 오류 수정</li>
+    <li>푸시 알림 발송 (파트너 활동, 리마인더, 기념일, 마일스톤, 배지, 문의 답변)</li>
+    <li>부정 이용 방지(보안 확인)</li>
+    <li>고객 문의 응대 및 오류 수정</li>
   </ul>
 
   <h2>3. 정보 보존 기간</h2>
   <ul>
-    <li><strong>계정 정보·버킷리스트</strong>: 계정 삭제 시 즉시 영구 삭제됩니다.</li>
-    <li><strong>인증 사진</strong>: 커플 해제 또는 계정 삭제 시 Storage에서 즉시 삭제됩니다.</li>
-    <li><strong>Analytics·Crashlytics 로그</strong>: Firebase 정책에 따라 최대 14개월간 보존됩니다.</li>
-    <li><strong>구매 기록</strong>: 현재 해당 없음. 인앱결제 재개 시 Google Play에 의해 보존되며 앱이 직접 관리하지 않습니다.</li>
-    <li><strong>AI 추천 요청 정보</strong>: 앱 서버에 따로 저장하지 않습니다. Google의 보존 기준은 Gemini API 약관을 따릅니다.</li>
+    <li><strong>계정 정보·버킷리스트·질문 답변·문의</strong>: 계정 삭제 시 즉시 영구 삭제됩니다.</li>
+    <li><strong>인증 사진</strong>: 커플 연동 해제 또는 계정 삭제 시 즉시 삭제됩니다.</li>
+    <li><strong>알림 토큰</strong>: 이용자가 알림을 끄거나 계정을 삭제하면 삭제됩니다.</li>
+    <li><strong>브라우저 저장소</strong>: 로그아웃하거나 브라우저 데이터를 지우면 삭제됩니다.</li>
+    <li><strong>AI 추천 요청 정보</strong>: 서비스 서버에 따로 저장하지 않습니다. Google의 보존 기준은 Gemini API 약관을 따릅니다.</li>
   </ul>
 
   <h2>4. 제3자 제공 및 위탁</h2>
-  <p>앱은 이용자의 개인정보를 제3자에게 판매하지 않습니다. 서비스 운영을 위해 아래 플랫폼에 처리를 위탁합니다.</p>
+  <p>서비스는 이용자의 개인정보를 제3자에게 판매하지 않습니다. 서비스 운영을 위해 아래에 처리를 위탁하거나 기술적으로 연결합니다.</p>
   <ul>
-    <li><strong>Google Firebase</strong> (인증, Firestore, Storage, FCM, Analytics, Crashlytics, Remote Config, Cloud Functions) — <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 개인정보처리방침</a></li>
-    <li><strong>Google Gemini API</strong> (AI 항목 추천) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
-    <li><strong>Google Play Billing</strong> (인앱결제, 현재 미사용) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
-    <li><strong>Kakao</strong> (카카오링크 공유) — <a href="https://www.kakao.com/policy/privacy" target="_blank">카카오 개인정보처리방침</a></li>
+    <li><strong>Google Firebase</strong> (인증, Firestore, Storage, Cloud Functions, Cloud Messaging, Remote Config, Hosting, App Check) — <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 개인정보처리방침</a></li>
+    <li><strong>Google reCAPTCHA Enterprise</strong> (보안 확인) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a>, <a href="https://policies.google.com/terms" target="_blank">서비스 약관</a></li>
+    <li><strong>Google Gemini API</strong> (AI 항목 추천, 제공 시) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
+    <li><strong>Open-Meteo</strong> (날씨 조회) — 브라우저가 서울 날씨를 직접 조회하며, 이 과정에서 접속 IP 주소가 전달됩니다. 계정 정보는 보내지 않습니다.</li>
+    <li><strong>jsDelivr</strong> (글꼴 파일 전송) — 글꼴을 내려받는 과정에서 접속 IP 주소가 전달됩니다.</li>
   </ul>
 
   <h2>5. 개인정보의 국외 이전</h2>
-  <p>앱은 서비스 제공을 위해 아래와 같이 개인정보의 처리를 국외에 위탁·보관합니다. 커플 데이터(Firestore), 인증 사진(Storage), 서버 함수(Cloud Functions)는 대한민국 서울 리전에서 처리합니다.</p>
+  <p>서비스는 서비스 제공을 위해 아래와 같이 개인정보의 처리를 국외에 위탁·보관합니다. 커플 데이터(Firestore), 인증 사진(Storage), 서버 함수(Cloud Functions)는 대한민국 서울 리전에서 처리합니다.</p>
   <ul>
-    <li><strong>이전받는 자</strong>: Google LLC (Firebase·Gemini API) — 문의: <a href="https://firebase.google.com/support" target="_blank">Firebase 지원</a></li>
+    <li><strong>이전받는 자</strong>: Google LLC (Firebase·reCAPTCHA·Gemini API) — 문의: <a href="https://firebase.google.com/support" target="_blank">Firebase 지원</a></li>
     <li><strong>이전 국가</strong>: 미국 등 Google 데이터센터가 있는 국가</li>
-    <li><strong>이전 항목</strong>: Google 계정 정보(이름·이메일·프로필 사진 URL), 사용자 ID, 기기 토큰(FCM), 앱 사용 로그(Analytics), 오류 로그(Crashlytics), AI 추천 요청 시 기존 버킷리스트 항목 제목</li>
+    <li><strong>이전 항목</strong>: Google 계정 정보(이름·이메일·프로필 사진 URL), 사용자 ID, 알림 토큰(FCM), 보안 확인 정보(reCAPTCHA), AI 추천 요청 시 기존 항목 제목</li>
     <li><strong>이전 시기·방법</strong>: 서비스 이용 시점에 암호화된 네트워크(TLS)로 전송</li>
     <li><strong>이용 목적·보유 기간</strong>: 2절(이용 목적)·3절(보존 기간)과 같습니다.</li>
-    <li><strong>거부 방법</strong>: 국외 이전을 원하지 않으면 앱 내 설정 → "계정 삭제"로 데이터를 삭제하고 이용을 중단할 수 있습니다. 위 처리는 로그인·알림 등 서비스 제공에 필수적이라, 거부하면 서비스를 이용할 수 없습니다.</li>
+    <li><strong>거부 방법</strong>: 국외 이전을 원하지 않으면 설정 → "계정 삭제"로 데이터를 삭제하고 이용을 중단할 수 있습니다. 위 처리는 로그인·알림 등 서비스 제공에 필수적이라, 거부하면 서비스를 이용할 수 없습니다.</li>
   </ul>
 
   <h2>6. 이용자 권리</h2>
   <ul>
-    <li><strong>데이터 내보내기</strong>: 앱 내 설정 → "데이터 내보내기"에서 버킷리스트 전체를 ZIP 파일로 다운로드할 수 있습니다.</li>
-    <li><strong>계정 삭제</strong>: 앱 내 설정 → "계정 삭제"에서 모든 데이터를 즉시 영구 삭제할 수 있습니다. (Google Play 정책 준수)</li>
-    <li><strong>알림 수신 거부</strong>: 기기 설정 또는 앱 내 알림 설정에서 비활성화할 수 있습니다.</li>
-    <li><strong>위치 권한 철회</strong>: 기기 설정 → 앱 권한에서 언제든지 위치 접근을 차단할 수 있습니다.</li>
+    <li><strong>계정 삭제</strong>: 우리 탭 → 설정 → "계정 삭제"(커플 연결 전에는 연결 화면 하단 "계정 삭제")에서 모든 데이터를 즉시 영구 삭제할 수 있습니다.</li>
+    <li><strong>커플 연동 해제</strong>: 설정 → "커플 연동 해제"에서 함께 만든 데이터와 사진을 삭제할 수 있습니다.</li>
+    <li><strong>알림 수신 거부</strong>: 설정 → "알림 설정" 또는 브라우저·기기 설정에서 끌 수 있습니다.</li>
+    <li><strong>열람·정정</strong>: 서비스 화면에서 직접 확인·수정할 수 있으며, 그 밖의 요청은 아래 이메일로 받습니다.</li>
   </ul>
 
   <h2>7. 아동 보호</h2>
@@ -95,7 +96,7 @@
   </p>
 
   <h2>9. 방침 변경</h2>
-  <p>본 방침이 변경될 경우 앱 내 공지 또는 이 페이지를 통해 사전 안내합니다. 변경 후 계속 서비스를 이용하면 변경 방침에 동의한 것으로 간주합니다.</p>
+  <p>본 방침이 변경될 경우 서비스 내 공지 또는 이 페이지를 통해 사전 안내합니다. 변경 후 계속 서비스를 이용하면 변경 방침에 동의한 것으로 간주합니다.</p>
 
   <hr style="border:none;border-top:1px solid #EADCE1;margin:32px 0;">
   <p style="font-size:0.8rem;color:#7A646C;">100다헤 · 이 100가지 다 하기 전엔 헤어지지 못해</p>
