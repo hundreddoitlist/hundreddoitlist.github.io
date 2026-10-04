@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>개인정보처리방침</h1>
-  <p class="updated">최종 수정일: 2026년 9월 9일 · 시행일: 2026년 6월 23일</p>
+  <p class="updated">최종 수정일: 2026년 10월 4일 · 시행일: 2026년 6월 23일</p>
 
   <p>
     100다헤 · 이 100가지 다 하기 전엔 헤어지지 못해(이하 "앱" 또는 "서비스")는 이용자의 개인정보를 소중히 여기며,
@@ -35,14 +35,16 @@
     <li><strong>기기 토큰(FCM)</strong>: 푸시 알림 발송을 위해 Firebase Cloud Messaging 토큰을 수집합니다. 토큰은 본인 기기에서만 읽을 수 있으며 파트너에게 노출되지 않습니다.</li>
     <li><strong>앱 사용 로그</strong>: Firebase Analytics를 통해 화면 조회, 기능 사용 패턴 등 익명화된 통계 데이터를 수집합니다.</li>
     <li><strong>오류 로그</strong>: Firebase Crashlytics를 통해 앱 충돌 정보를 수집합니다.</li>
-    <li><strong>인앱결제 정보</strong>: 구매 여부 및 구매 토큰이 Google Play를 통해 처리됩니다. 카드 번호 등 결제 수단은 앱이 직접 수집하지 않습니다.</li>
+    <li><strong>인앱결제 정보</strong>: 현재 앱은 인앱결제를 제공하지 않아 구매 정보를 수집하지 않습니다. 인앱결제를 다시 제공하게 되면 구매 여부 및 구매 토큰이 Google Play를 통해 처리되며, 카드 번호 등 결제 수단은 앱이 직접 수집하지 않습니다. 재개 시 이 방침을 먼저 갱신합니다.</li>
+    <li><strong>AI 추천 요청 정보</strong>: "AI 추천"을 요청하면 중복 추천을 피하기 위해 커플의 기존 버킷리스트 항목 제목이 Google Gemini API로 전송됩니다. 이름·이메일 등 계정 정보는 함께 보내지 않습니다.</li>
   </ul>
 
   <h2>2. 정보 이용 목적</h2>
   <ul>
     <li>서비스 제공 및 커플 데이터 실시간 동기화</li>
     <li>푸시 알림 발송 (파트너 활동, 리마인더, 기념일, 마일스톤)</li>
-    <li>구매 상태 검증 및 프리미엄 기능 제공</li>
+    <li>AI 기반 버킷리스트 항목 추천</li>
+    <li>구매 상태 검증 및 프리미엄 기능 제공 (인앱결제 재개 시)</li>
     <li>서비스 품질 개선을 위한 통계 분석 및 오류 수정</li>
   </ul>
 
@@ -51,18 +53,31 @@
     <li><strong>계정 정보·버킷리스트</strong>: 계정 삭제 시 즉시 영구 삭제됩니다.</li>
     <li><strong>인증 사진</strong>: 커플 해제 또는 계정 삭제 시 Storage에서 즉시 삭제됩니다.</li>
     <li><strong>Analytics·Crashlytics 로그</strong>: Firebase 정책에 따라 최대 14개월간 보존됩니다.</li>
-    <li><strong>구매 기록</strong>: Google Play에 의해 보존되며 앱이 직접 관리하지 않습니다.</li>
+    <li><strong>구매 기록</strong>: 현재 해당 없음. 인앱결제 재개 시 Google Play에 의해 보존되며 앱이 직접 관리하지 않습니다.</li>
+    <li><strong>AI 추천 요청 정보</strong>: 앱 서버에 따로 저장하지 않습니다. Google의 보존 기준은 Gemini API 약관을 따릅니다.</li>
   </ul>
 
   <h2>4. 제3자 제공 및 위탁</h2>
   <p>앱은 이용자의 개인정보를 제3자에게 판매하지 않습니다. 서비스 운영을 위해 아래 플랫폼에 처리를 위탁합니다.</p>
   <ul>
     <li><strong>Google Firebase</strong> (인증, Firestore, Storage, FCM, Analytics, Crashlytics, Remote Config, Cloud Functions) — <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 개인정보처리방침</a></li>
-    <li><strong>Google Play Billing</strong> (인앱결제) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
+    <li><strong>Google Gemini API</strong> (AI 항목 추천) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
+    <li><strong>Google Play Billing</strong> (인앱결제, 현재 미사용) — <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
     <li><strong>Kakao</strong> (카카오링크 공유) — <a href="https://www.kakao.com/policy/privacy" target="_blank">카카오 개인정보처리방침</a></li>
   </ul>
 
-  <h2>5. 이용자 권리</h2>
+  <h2>5. 개인정보의 국외 이전</h2>
+  <p>앱은 서비스 제공을 위해 아래와 같이 개인정보의 처리를 국외에 위탁·보관합니다. 커플 데이터(Firestore), 인증 사진(Storage), 서버 함수(Cloud Functions)는 대한민국 서울 리전에서 처리합니다.</p>
+  <ul>
+    <li><strong>이전받는 자</strong>: Google LLC (Firebase·Gemini API) — 문의: <a href="https://firebase.google.com/support" target="_blank">Firebase 지원</a></li>
+    <li><strong>이전 국가</strong>: 미국 등 Google 데이터센터가 있는 국가</li>
+    <li><strong>이전 항목</strong>: Google 계정 정보(이름·이메일·프로필 사진 URL), 사용자 ID, 기기 토큰(FCM), 앱 사용 로그(Analytics), 오류 로그(Crashlytics), AI 추천 요청 시 기존 버킷리스트 항목 제목</li>
+    <li><strong>이전 시기·방법</strong>: 서비스 이용 시점에 암호화된 네트워크(TLS)로 전송</li>
+    <li><strong>이용 목적·보유 기간</strong>: 2절(이용 목적)·3절(보존 기간)과 같습니다.</li>
+    <li><strong>거부 방법</strong>: 국외 이전을 원하지 않으면 앱 내 설정 → "계정 삭제"로 데이터를 삭제하고 이용을 중단할 수 있습니다. 위 처리는 로그인·알림 등 서비스 제공에 필수적이라, 거부하면 서비스를 이용할 수 없습니다.</li>
+  </ul>
+
+  <h2>6. 이용자 권리</h2>
   <ul>
     <li><strong>데이터 내보내기</strong>: 앱 내 설정 → "데이터 내보내기"에서 버킷리스트 전체를 ZIP 파일로 다운로드할 수 있습니다.</li>
     <li><strong>계정 삭제</strong>: 앱 내 설정 → "계정 삭제"에서 모든 데이터를 즉시 영구 삭제할 수 있습니다. (Google Play 정책 준수)</li>
@@ -70,16 +85,16 @@
     <li><strong>위치 권한 철회</strong>: 기기 설정 → 앱 권한에서 언제든지 위치 접근을 차단할 수 있습니다.</li>
   </ul>
 
-  <h2>6. 아동 보호</h2>
+  <h2>7. 아동 보호</h2>
   <p>본 서비스는 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 이용자의 정보가 확인된 경우 즉시 삭제합니다.</p>
 
-  <h2>7. 개인정보 보호책임자</h2>
+  <h2>8. 개인정보 보호책임자</h2>
   <p>
     개인정보 처리 관련 문의는 아래 이메일로 연락 주세요.<br>
     이메일: <a href="mailto:ehdqnddl@gmail.com">ehdqnddl@gmail.com</a>
   </p>
 
-  <h2>8. 방침 변경</h2>
+  <h2>9. 방침 변경</h2>
   <p>본 방침이 변경될 경우 앱 내 공지 또는 이 페이지를 통해 사전 안내합니다. 변경 후 계속 서비스를 이용하면 변경 방침에 동의한 것으로 간주합니다.</p>
 
   <hr style="border:none;border-top:1px solid #EADCE1;margin:32px 0;">
